@@ -1,0 +1,57 @@
+---
+title: 'Manuscript'
+output:  
+  bookdown::pdf_document2:
+    fontsize: 12pt
+    fontfamily: helvetica
+    keep_tex: yes #keep LaTeX file for submission
+    fig_caption: yes #allows captions in figures
+    toc: false #do not include table of contents
+    extra_dependencies:
+      subfig: null #allows for subfigures
+      breqn: null #line breaks for long equations
+      caption: ["font={small}"] #size of the figure captions
+    includes:
+      in_header: latex_docs/preamble.sty #additional LaTeX formatting
+  bookdown::word_document2:
+    fig_caption: yes #figure caption
+    reference_docx: "docx_template.docx"
+    keep_md: yes
+  bookdown::html_document2:
+    css: "html_docs/style.css" #style for the HTML document
+csl: bibliography/american-medical-association.csl #style for references
+bibliography: bibliography/refs.bib #references
+link-citations: yes #adds links to the citations
+urlcolor: blue
+'': default
+---
+
+
+```{r child='sections/01-Introduction.Rmd'}
+```
+
+
+
+```{r child='sections/02-Materials-and-Methods.Rmd'}
+```
+
+
+
+```{r child='sections/03-Results.Rmd'}
+```
+
+
+
+```{r child='sections/04-Discussion.Rmd'}
+```
+
+
+
+```{r child='sections/05-Conclusion.Rmd'}
+```
+
+
+***
+# References
+
+<div id="refs"></div>
