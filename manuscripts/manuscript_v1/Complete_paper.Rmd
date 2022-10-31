@@ -26,6 +26,45 @@ urlcolor: blue
 '': default
 ---
 
+# Abstract
+
+Metronomic chemotherapy (MET) has been developed to address the shortcomings of maximum-tolerated chemotherapy (MTD) in regard to toxicity and development of resistance mechanisms in the tumor. In colorectal cancer (CRC), MET is a promising novel strategy to treat locally advanced malignancies when used as neoadjuvant chemotherapy (NAC). However, so far there are no preclinical studies to assess the impact of MET NAC in CRC to assess the benefits and challenges of this approach. Here, we used a primary model of CRC (via azoxymethane) to analyze longitudinal changes in angiogenesis in primary tumors under MET and MTD NAC using a combination of diffuse reflectance spectroscopy and mRNA expression (via qPCR). Our results show that MET and MTD NAC lead to increased mean tissue oxygen saturation (8% and 5%, respectively) and oxyhemoglobin (15% and 10%) between weeks 2 and 5 of NAC, and that such increases are caused by distinct molecular signatures in the angiogenic program. Specifically, we find that in the MET group there is a sustained increase in _Hif-1a_, _Aldoa_, and _Pgk1_ expression, suggesting upregulated glycolysis, whereas MTD NAC causes a significant reduction in the expression of the aforementioned genes and of _Vegf_, leading to vascular remodeling in MTD-treated tumors. Taken together, this study demonstrates the ability of combined optical and molecular methodologies to provide a holistic picture of tumor response to therapy in CRC in a minimally invasive manner.
+
+# Keywords {-}
+
+science; living systems; research
+
+```{r libraries, message = FALSE,include=FALSE}
+#the packages needed to run the code
+
+library(patchwork)
+library(tidyverse)
+library(here)
+library(showtext)
+library(jpeg)
+library(ggpmisc)
+library(grid)
+library(png)
+library(scico)
+set.seed(2021) #set seed for reproducibility
+
+thm1<-scale_fill_scico_d(palette="vikO",begin=0.2, end=0.8, direction = 1, aesthetics = c("colour","fill"))
+
+#font_add("Atkinson",regular="AtkinsonHyperlegible-Regular.ttf",italic="AtkinsonHyperlegible-Italic.ttf")
+showtext_auto()
+
+#this function will remove the default "author information" that is the Pandoc LaTeX template. Otherwise, and additional "and" will appear at the end of the author list.Or, the custom template that is in the YAML header and that has the "author" line deleted may be used as well. An explanation in detail is provided at:
+#https://github.com/rstudio/bookdown/issues/1158
+remove_author <- function(x) {
+  # identify empty author line
+  i <- grep("^\\\\author\\{\\}$", x)
+  # be sure it is the one pandoc inserts
+  if(length(i) != 0 && grepl('^\\\\date\\{', x[i+1])) x <- x[-i]
+  x
+}
+options(bookdown.post.latex = remove_author)
+```
+
 
 ```{r child='sections/01-Introduction.Rmd'}
 ```
