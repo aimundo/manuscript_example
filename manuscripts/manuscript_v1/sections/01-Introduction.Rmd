@@ -1,7 +1,0 @@
-# Background
-
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin odio dui, tristique sed rutrum lobortis, ornare ac sapien. Pellentesque consequat dapibus magna et dignissim. Sed interdum auctor mauris, in convallis quam egestas ac. Suspendisse condimentum tincidunt fringilla. Mauris vitae est quis eros tristique feugiat. Vivamus a arcu mi. Aenean at malesuada diam, at mollis eros. Mauris malesuada lectus ipsum, sed condimentum nulla faucibus et. Aenean ac turpis sem. Suspendisse aliquam lectus nunc, sed accumsan felis convallis non. Praesent in ex eu lacus cursus cursus aliquam vitae massa. Phasellus nibh tellus, suscipit at efficitur eget, varius nec lacus. Maecenas consequat fringilla ligula, in tempus ipsum dictum quis. Proin ac est blandit velit dignissim ultricies. Quisque bibendum eu nulla eu euismod. Praesent aliquam convallis metus a tincidunt.
-
-## Another paragraph
-
-Praesent suscipit tempor magna vitae accumsan. Pellentesque rutrum consectetur est. Nullam varius nibh nunc, nec ornare nunc consequat non. Suspendisse sagittis dui consequat libero placerat dignissim. Curabitur nec dolor augue. Aenean non sem in justo rhoncus gravida. Nam rhoncus suscipit felis, eget faucibus tellus vulputate eget. Nunc non neque turpis. Maecenas rhoncus cursus neque non vestibulum. Morbi ullamcorper nisi ac egestas mattis. Donec auctor id enim non interdum. Curabitur quis erat in arcu consequat aliquet et at mauris. 

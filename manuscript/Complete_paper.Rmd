@@ -28,7 +28,8 @@ urlcolor: blue
 
 # Abstract
 
-Metronomic chemotherapy (MET) has been developed to address the shortcomings of maximum-tolerated chemotherapy (MTD) in regard to toxicity and development of resistance mechanisms in the tumor. In colorectal cancer (CRC), MET is a promising novel strategy to treat locally advanced malignancies when used as neoadjuvant chemotherapy (NAC). However, so far there are no preclinical studies to assess the impact of MET NAC in CRC to assess the benefits and challenges of this approach. Here, we used a primary model of CRC (via azoxymethane) to analyze longitudinal changes in angiogenesis in primary tumors under MET and MTD NAC using a combination of diffuse reflectance spectroscopy and mRNA expression (via qPCR). Our results show that MET and MTD NAC lead to increased mean tissue oxygen saturation (8% and 5%, respectively) and oxyhemoglobin (15% and 10%) between weeks 2 and 5 of NAC, and that such increases are caused by distinct molecular signatures in the angiogenic program. Specifically, we find that in the MET group there is a sustained increase in _Hif-1a_, _Aldoa_, and _Pgk1_ expression, suggesting upregulated glycolysis, whereas MTD NAC causes a significant reduction in the expression of the aforementioned genes and of _Vegf_, leading to vascular remodeling in MTD-treated tumors. Taken together, this study demonstrates the ability of combined optical and molecular methodologies to provide a holistic picture of tumor response to therapy in CRC in a minimally invasive manner.
+Suspendisse aliquam lectus nunc, sed accumsan felis convallis non. Praesent in ex eu lacus cursus cursus aliquam vitae massa. Phasellus nibh tellus, suscipit at efficitur eget, varius nec lacus. Maecenas consequat fringilla ligula, in tempus ipsum dictum quis. Proin ac est blandit velit dignissim ultricies. Quisque bibendum eu nulla eu euismod. Praesent aliquam convallis metus a tincidunt.
+
 
 # Keywords {-}
 
