@@ -14,14 +14,13 @@ formula<-y~x
 a1<-ggplot(data=data,aes(x=weight,y=body_fat,fill=Group,color=Group))+
     geom_point(show.legend=FALSE,shape=21,colour='black',size=5,
                alpha=0.7)+
-    #facet_wrap(~Group)+
     geom_smooth(method="lm",formula=formula, se=T)+
     stat_poly_eq(use_label(c("R2","p.value")), formula = formula, size = 3)+
     theme_classic()+
     thm1
 
 
-a2<-ggplot(data=data,aes(x=weight,fill=Group,color=Group))+
+a2<-ggplot(data=data,aes(x=weight,fill=Group,color=Group))+Layout
     geom_histogram(binwidth = 5)+
     theme_classic()+
     thm1
