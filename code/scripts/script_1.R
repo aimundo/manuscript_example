@@ -14,18 +14,17 @@ formula<-y~x
 a1<-ggplot(data=data,aes(x=weight,y=body_fat,fill=Group,color=Group))+
     geom_point(show.legend=FALSE,shape=21,colour='black',size=5,
                alpha=0.7)+
-    geom_smooth(method="lm",formula=formula, se=T)+
+    geom_smooth(method="lm",formula=formula, se=T,alpha=0.5)+
     stat_poly_eq(use_label(c("R2","p.value")), formula = formula, size = 3)+
     theme_classic()+
     thm1
 
 
-a2<-ggplot(data=data,aes(x=weight,fill=Group,color=Group))+Layout
-    geom_histogram(binwidth = 5)+
+a2<-ggplot(data=data,aes(x=weight,fill=Group,color=Group))+
+    geom_histogram(binwidth = 5, alpha=0.5)+
     theme_classic()+
     thm1
 
-a2
 ## add pictures to create composite image
 
 cells<-rasterGrob(readPNG(here("figures","cells.png"),native=TRUE))
@@ -51,7 +50,7 @@ CCCCEEEE
 
 image_a<-wrap_elements(
     panel=cells
-)+
+    )+
     theme(plot.title = element_text(hjust = 0.5))+
     ylab("cells")+
     wrap_elements(
@@ -62,7 +61,8 @@ image_a<-wrap_elements(
         panel=jellyfish
     )+
     ylab("jellyfish")+
-    theme(plot.title = element_text(hjust = 0.5))+
+    theme(plot.title = element_text(hjust = 0.5)
+          )+
     a1+
     a2+
     plot_layout(design=layout)+
